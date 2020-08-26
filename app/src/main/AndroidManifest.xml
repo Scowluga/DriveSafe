@@ -29,13 +29,13 @@
          at https://developer.here.com/develop/mobile-sdks-->
         <meta-data
             android:name="com.here.android.maps.appid"
-            android:value="HRETjUmoXx58BTkTL65P" />
+            android:value="" />
         <meta-data
             android:name="com.here.android.maps.apptoken"
-            android:value="RVQFN2O9b8iS8i1PZkitAw" />
+            android:value="" />
         <meta-data
             android:name="com.here.android.maps.license.key"
-            android:value="VfPZ9IKuM1T9hTMlXNKMkUBKz3y79sX8dlYX6k2WkZhx1NaEwfvNO6fQfHcw5xe0kXhA2K6tWoTyW0pMb+trmqTLcRfsGuymWuUwxcqmd0SNsc0QlHT/2+GAoQjG/ZxgdZVhRVkJuq6V+50bExjjLr/xIiZXYH9L0jdJRn5UM2A9vwtFh24MaFE+wfaPzRLTq+oIC7p3gWa8jOa3cWjnOpAw39JYov30bwaHR7DVSUkgiT+9uJZv6EnC1Q6Xl1kzrZ4KWzZNbUuMVPOfb61alWASe3Q1+04RFu1+ncZlqJQu8WppEBi6JhVrAFGn9cuO7ZnwYoAAN5+rgO9yf8Tgiqs6NRzIM5QH25KiwKLOw3HQknDZJmE8nOzxxAmYKjidPspO4Wj3vgHkfKL5NYNqSRuJ/PJwfewRqhcQr27oQ5G1+zMhe3s0pfDtDaGi4pQUOyLsxPNq3XPVCnwRME5Q9QEJk3o4PTBPL7eWDaCmzYpfwV96sOjwFxRulck+aTtrZfGiid4UkxFABtu28eQWvA5S0ZKCkd0kU3z9exurZ7CzblxQhMgNMWS6EADpYCcqG0WIeI/oa1AH3xk9ngNUqCJ6DHbQSy/lB+5b6iVCDfdmOyUOKPmFY+6En2deUNQZThkCDCuWjOq9iEyTzO9C7EGNiujkGnrRocvAKqUi0ak=" />
+            android:value="" />
         <service android:name=".ForegroundService" />
     </application>
 </manifest>
