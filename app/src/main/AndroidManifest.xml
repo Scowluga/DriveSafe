@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.here.android.example.guidance">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--To allow starting foreground services on Android P+ -->
+    <!--https://developer.android.com/preview/behavior-changes#fg-svc -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Developers should put application credentials here.To obtain them, please register the application
+         at https://developer.here.com/develop/mobile-sdks-->
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="HRETjUmoXx58BTkTL65P" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="RVQFN2O9b8iS8i1PZkitAw" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="VfPZ9IKuM1T9hTMlXNKMkUBKz3y79sX8dlYX6k2WkZhx1NaEwfvNO6fQfHcw5xe0kXhA2K6tWoTyW0pMb+trmqTLcRfsGuymWuUwxcqmd0SNsc0QlHT/2+GAoQjG/ZxgdZVhRVkJuq6V+50bExjjLr/xIiZXYH9L0jdJRn5UM2A9vwtFh24MaFE+wfaPzRLTq+oIC7p3gWa8jOa3cWjnOpAw39JYov30bwaHR7DVSUkgiT+9uJZv6EnC1Q6Xl1kzrZ4KWzZNbUuMVPOfb61alWASe3Q1+04RFu1+ncZlqJQu8WppEBi6JhVrAFGn9cuO7ZnwYoAAN5+rgO9yf8Tgiqs6NRzIM5QH25KiwKLOw3HQknDZJmE8nOzxxAmYKjidPspO4Wj3vgHkfKL5NYNqSRuJ/PJwfewRqhcQr27oQ5G1+zMhe3s0pfDtDaGi4pQUOyLsxPNq3XPVCnwRME5Q9QEJk3o4PTBPL7eWDaCmzYpfwV96sOjwFxRulck+aTtrZfGiid4UkxFABtu28eQWvA5S0ZKCkd0kU3z9exurZ7CzblxQhMgNMWS6EADpYCcqG0WIeI/oa1AH3xk9ngNUqCJ6DHbQSy/lB+5b6iVCDfdmOyUOKPmFY+6En2deUNQZThkCDCuWjOq9iEyTzO9C7EGNiujkGnrRocvAKqUi0ak=" />
+        <service android:name=".ForegroundService" />
+    </application>
+</manifest>
