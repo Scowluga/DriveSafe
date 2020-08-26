@@ -16,24 +16,25 @@
 
 package com.here.android.example.guidance
 
-import java.io.File
-import java.lang.ref.WeakReference
-import java.util.Locale
-
+import android.app.AlertDialog
+import android.content.Intent
+import android.speech.tts.TextToSpeech
+import android.util.Log
+import android.view.View
+import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.here.android.mpa.common.GeoBoundingBox
 import com.here.android.mpa.common.GeoCoordinate
 import com.here.android.mpa.common.GeoPosition
-import com.here.android.mpa.common.IconCategory
+import com.here.android.mpa.common.Image
 import com.here.android.mpa.common.OnEngineInitListener
 import com.here.android.mpa.guidance.NavigationManager
-import com.here.android.mpa.mapping.Map
 import com.here.android.mpa.mapping.AndroidXMapFragment
-import com.here.android.mpa.mapping.MapLabeledMarker
+import com.here.android.mpa.mapping.Map
 import com.here.android.mpa.mapping.MapMarker
+import com.here.android.mpa.mapping.MapOverlayType
 import com.here.android.mpa.mapping.MapRoute
 import com.here.android.mpa.routing.CoreRouter
-import com.here.android.mpa.routing.Maneuver
 import com.here.android.mpa.routing.Route
 import com.here.android.mpa.routing.RouteOptions
 import com.here.android.mpa.routing.RoutePlan
@@ -41,27 +42,8 @@ import com.here.android.mpa.routing.RouteResult
 import com.here.android.mpa.routing.RouteWaypoint
 import com.here.android.mpa.routing.Router
 import com.here.android.mpa.routing.RoutingError
-
-import androidx.appcompat.app.AppCompatActivity
-import android.app.AlertDialog
-import android.content.DialogInterface
-import android.content.Intent
-import android.content.pm.ApplicationInfo
-import android.content.pm.PackageManager
-import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.Paint
-import android.graphics.PorterDuff
-import android.graphics.PorterDuffColorFilter
-import android.os.Bundle
-import android.speech.tts.TextToSpeech
-import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.Toast
-import com.here.android.mpa.common.Image
-import com.here.android.mpa.mapping.MapOverlayType
-import com.here.android.mpa.mapping.customization.CustomizableVariables
+import java.lang.ref.WeakReference
+import java.util.Locale
 import kotlin.math.pow
 
 /**

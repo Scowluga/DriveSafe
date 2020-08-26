@@ -25,17 +25,14 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
-import androidx.core.app.ActivityCompat
-import androidx.appcompat.app.AppCompatActivity
-
 import android.widget.AutoCompleteTextView
-import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.animation.doOnEnd
+import androidx.core.app.ActivityCompat
 import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.lifecycleScope
 import com.here.android.mpa.routing.RouteOptions
@@ -44,7 +41,6 @@ import kotlinx.android.synthetic.main.activity_main.fromtext_layout
 import kotlinx.android.synthetic.main.activity_main.go_button
 import kotlinx.android.synthetic.main.activity_main.icon2
 import kotlinx.android.synthetic.main.activity_main.icon3
-import kotlinx.android.synthetic.main.activity_main.radio_fastest
 import kotlinx.android.synthetic.main.activity_main.radio_group
 import kotlinx.android.synthetic.main.activity_main.radio_safest
 import kotlinx.android.synthetic.main.activity_main.radio_shortest
@@ -101,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // --- Setup Radio Group ---
-        radio_group.setOnCheckedChangeListener { _, checkedId -> updateMap() }
+        radio_group.setOnCheckedChangeListener { _, _ -> updateMap() }
 
         // --- Setup Animations ---
         val showViews = listOf<View>(

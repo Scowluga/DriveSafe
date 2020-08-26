@@ -5,13 +5,8 @@ import android.util.Log
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.Response
-import com.android.volley.VolleyError
 import com.android.volley.toolbox.JsonArrayRequest
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.JsonRequest
 import com.android.volley.toolbox.Volley
-import com.google.gson.JsonArray
-import com.google.gson.JsonObject
 import com.here.android.mpa.common.GeoCoordinate
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -73,7 +68,6 @@ class VolleySingleton constructor(context: Context) {
     }
 
     private fun JSONObject.safeGetDouble(key: String): Double = if (get(key) == "null" || get(key) == JSONObject.NULL) 0.0 else getDouble(key)
-
 
 
     // Returns list of intersection names
