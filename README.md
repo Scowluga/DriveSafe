@@ -14,6 +14,6 @@ DriveSafe leverages HERE.com's API for live traffic data and maps. Additionally,
 2. [A public traffic volume dataset](https://opendata.vancouver.ca/explore/dataset/intersection-traffic-movement-counts/table/)
 
 ## Running the App 
-The Android app requires proper license keys for the HERE.com Android API. See [HERE.com](https://developer.here.com/) for more information on how to set this up. 
+The Android app requires proper license keys for the HERE.com Android API. See [HERE.com](https://developer.here.com/) for more information on how to set this up. This repository is originally cloned from the HERE.com [turn-by-turn navigation example](https://github.com/heremaps/here-android-sdk-examples/tree/master/turn-by-turn-navigation). 
 
-Unfortunately, the MySQL database for DriveSafe is no longer being hosted, so the rest of the functionality will not work. 
+Unfortunately, the MySQL database for DriveSafe is no longer being hosted. The rest of the functionality will not work. 
