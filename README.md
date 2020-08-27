@@ -13,6 +13,9 @@ DriveSafe leverages HERE.com's API for live traffic data and maps. Additionally,
 1. [An open source collision information dataset](https://public.tableau.com/profile/icbc#!/vizhome/LowerMainlandCrashes/LMDashboard)
 2. [A public traffic volume dataset](https://opendata.vancouver.ca/explore/dataset/intersection-traffic-movement-counts/table/)
 
+## Tech Stack 
+DriveSafe is an Android application with a Node.js backend connected to a MySQL database hosted on GCP.
+
 ## Running the App 
 The Android app requires proper license keys for the HERE.com Android API. See [HERE.com](https://developer.here.com/) for more information on how to set this up. This repository is originally cloned from the HERE.com [turn-by-turn navigation example](https://github.com/heremaps/here-android-sdk-examples/tree/master/turn-by-turn-navigation). 
 
